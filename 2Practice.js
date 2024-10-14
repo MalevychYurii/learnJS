@@ -46,18 +46,18 @@ while (i < 2) {
 let i = 0;
 do {
     const lastMovie = prompt('Який фільм ви дивилися останнім?', ''),
-          numberOfPoints = prompt('На скільки можете оцінити його?', '');
+        numberOfPoints = prompt('На скільки можете оцінити його?', '');
 
     if (lastMovie != null && lastMovie != '' && lastMovie.length < 50 &&
-    numberOfPoints != null && numberOfPoints != '' && !isNaN(numberOfPoints)) {
-    
-    personalMovieDB.movies[lastMovie] = numberOfPoints;
-    console.log('Дані успішно збережені');
-    i++;
+        numberOfPoints != null && numberOfPoints != '' && !isNaN(numberOfPoints)) {
+
+        personalMovieDB.movies[lastMovie] = numberOfPoints;
+        console.log('Дані успішно збережені');
+        i++;
     } else {
         console.log('Некоректні дані, спробуйте ще раз');
     }
-} while (i < 2);   
+} while (i < 2);
 
 
 if (personalMovieDB.count < 10) {

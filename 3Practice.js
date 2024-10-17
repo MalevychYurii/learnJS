@@ -39,7 +39,7 @@ function rememberMyFilms() {
 
 /* let i = 0;
 while (i < 2) {
-    const lastMovie = prompt('Який фільм ви дивилися останнім?', ''),
+    const lastMovie = prompt('Який фільм ви дивилися останнім?', '').trim(),
           numberOfPoints = prompt('На скільки можете оцінити його?', '');
 
     if (lastMovie != null && lastMovie != '' && lastMovie.length < 50 &&

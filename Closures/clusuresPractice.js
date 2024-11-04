@@ -26,3 +26,5 @@ const a2 = increment();
 const a3 = increment();
 
 console.log(a1, a2, a3);
+
+alert("1, 2, 3"[3]);

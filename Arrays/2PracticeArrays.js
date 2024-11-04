@@ -25,3 +25,14 @@ const arr = [15, 29, 93];
 console.log(arr);
 // console.log(newArr);
 // console.log(strArr);
+
+
+const arr1 = [
+    { name: 'Yura', age: 20 },
+    { name: 'Anton', age: 31 },
+    { name: 'Bogdan', age: 59 },
+    { name: 'anya', age: 18 },
+]
+
+arr1.sort((a, b) => a.name.localeCompare(b.name));
+console.log(arr1);

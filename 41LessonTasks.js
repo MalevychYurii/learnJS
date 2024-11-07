@@ -27,8 +27,14 @@
 // а їхні посилання (адреси в пам'яті).
 // Навіть якщо два масиви мають однаковий вміст, вони є різними об'єктами в пам'яті.
 
-// 10. alert( +"Infinity" ); // Infinity. Type: number
+// 10. alert( +"Infinity" ); // Infinity. Type: number, бо присутній унарний плюс.
 
-// 11. "Ёжик" > "яблоко"? // Взагалі false, але треба дивитись таблицю символів Unicode
+// 11. "Ёжик" > "яблоко"? // Взагалі false, але треба дивитись таблицю символів Unicode.
 
 // 12. 0 || "" || 2 || undefined || true || falsе  // 2 
+
+function filterEvenNumbers(arr) {
+    return arr.filter(num => num % 2 === 0);
+}
+
+console.log(filterEvenNumbers([1, 2, 3, 4, 5]))

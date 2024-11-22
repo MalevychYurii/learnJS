@@ -28,6 +28,17 @@ function countDownRecursion(number) {
 
 countDownRecursion(10);
 
+function countUpRecursion(number, max) {
+    if (number > max) {
+        return
+    } else {
+        console.log(number)
+        countUpRecursion(number + 1, max)
+    }
+}
+
+countUpRecursion(0, 10)
+
 const arr = [1, 1, [2, 2], [[3, [4, 5, [0]], 3], 2]];
 
 function concatArrRecursion(items) {
@@ -44,4 +55,4 @@ function concatArrRecursion(items) {
     return flattened;
 }
 
-concatArrRecursion(arr)
+console.log(concatArrRecursion(arr));

@@ -53,3 +53,5 @@ for (let value of objArr) {
 
 let average = total / objArr.length;
 console.log(average)
+
+console.log(Object.entries(object));

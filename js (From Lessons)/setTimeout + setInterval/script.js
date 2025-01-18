@@ -7,7 +7,7 @@ function myAnimation() {
     let position = 0;
 
 
-    const id = setInterval(frame, 1);
+    const id = setInterval(frame, 10);
     function frame() {
         if (position == 300) {
             clearInterval(id);

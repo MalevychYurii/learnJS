@@ -1,12 +1,9 @@
 'use strict';
 
-let counter = 0;
+const name = 'Alex';
 
-const timerId = setInterval(() => {
-    counter++
-    console.log(`${counter} секунда`);
+function test() {
+    console.log(this); // Перевіримо, що буде у this
+}
 
-    if (counter === 5) {
-        clearInterval(timerId);
-    }
-}, 1000,)
+test.call(name);  // 'this' тепер дорівнює 'Alex'
